@@ -7,18 +7,18 @@
 <body>
 	<h1>Wacky Widgets</h1>
 	<section>
-			<% widget.forEach(widget => { %>
-				<% if (widget.length === 0) { %>
-					<h3>No Widgets Exist</h3>
+			<% if (widget.length === 0) { %>
+				<h3>No Widgets Exist</h3>
 				<% } else { %>
+			<% widget.forEach(widget => { %>
 					<h3><strong><%= widget.description %></strong></h3><br>
 					<h3><%= widget.quantity %></h3><br>
-				<% }%>
 			
 			<form method="POST" action="/<%=widget.id%>?_method=DELETE">
 				<button type="submit">DELETE</button>
 			</form><br><hr>
 			<% }) %>
+			<% } %>
 			</section>
 
 	<hr>
