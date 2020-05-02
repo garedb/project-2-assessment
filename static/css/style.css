@@ -18,6 +18,10 @@ form {
   text-align: center;
 }
 
+.add {
+  width: 80%;
+}
+
 input {
   width: 80%;
   height: 2em;
